@@ -16,6 +16,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/dev.secretstartups.io/",
-  // base: mode === "production" ? "/dev.secretstartups.io/" : "/", // Use "/" locally, correct base for GitHub Pages
+  base: "./",
 }));
