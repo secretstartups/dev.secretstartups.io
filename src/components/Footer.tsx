@@ -1,5 +1,11 @@
 
-import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Linkedin, Twitter } from "lucide-react";
+import { 
+  SiYoutube,
+  SiFacebook, 
+  SiGithub, 
+  SiInstagram, 
+} from "@icons-pack/react-simple-icons";
 
 const Footer = () => {
   return (
@@ -17,33 +23,51 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
                 <Twitter className="h-5 w-5 text-gray-300" />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/company/secretstartups"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
                 <Linkedin className="h-5 w-5 text-gray-300" />
               </a>
               <a
-                href="#"
+                href="https://github.com/secretstartups"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
-                <Github className="h-5 w-5 text-gray-300" />
+                <SiGithub className="h-5 w-5 text-gray-300" />
               </a>
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
-                <Facebook className="h-5 w-5 text-gray-300" />
+                <SiFacebook className="h-5 w-5 text-gray-300" />
               </a>
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
               >
-                <Instagram className="h-5 w-5 text-gray-300" />
+                <SiInstagram className="h-5 w-5 text-gray-300" />
+              </a>
+              <a
+                href="https://youtube.com/@SecretStartups"
+                className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiYoutube className="h-5 w-5 text-gray-300" />
               </a>
             </div>
           </div>
