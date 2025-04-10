@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Solutions from "@/components/Solutions";
-import OpenDev from "@/components/OpenDev";
+import Products from "@/components/Products";
 import Toolsets from "@/components/Toolsets";
 import Pricing from "@/components/Pricing";
 import CaseStudies from "@/components/CaseStudies";
@@ -15,7 +15,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <Solutions />
-      <OpenDev />
+      <Products />
       <Toolsets />
       <Pricing />
       <CaseStudies />
