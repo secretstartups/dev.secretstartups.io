@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 
-const OpenDev = () => {
+const Products = () => {
   return (
     <section id="opendev" className="py-20 bg-[#111827] relative overflow-hidden">
       {/* Background elements */}
@@ -132,4 +132,4 @@ const OpenDev = () => {
   );
 };
 
-export default OpenDev;
+export default Products;

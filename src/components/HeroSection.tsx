@@ -14,19 +14,24 @@ const HeroSection = () => {
         <div className="absolute bottom-10 left-10 w-72 h-72 bg-startup-blue/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="container relative z-10">
-        <div className="flex flex-col items-center text-center">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm mb-6">
+      {/* Fullscreen Phrases Section */}
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="container relative z-10 text-center">
+          {/* <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm mb-6">
             <span className="text-startup-accent mr-2">✨</span>
             <span>Accelerate your product development</span>
-          </div>
+          </div> */}
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block">Build Faster.</span>
             <span className="block">Scale Smarter.</span>
             <span className="block text-gradient">Launch Sooner.</span>
           </h1>
+        </div>
+      </div>
 
+      <div className="container relative z-10">
+        <div className="flex flex-col items-center text-center">
           <p className="text-xl text-gray-300 max-w-3xl mb-10">
             SecretStartups.io empowers companies to accelerate product development
             by leveraging pre-built components, powerful toolsets, and expert
