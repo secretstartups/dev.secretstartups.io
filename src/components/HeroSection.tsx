@@ -25,7 +25,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block">Build Faster.</span>
             <span className="block">Scale Smarter.</span>
-            <span className="block text-gradient">Launch Sooner.</span>
+            <span className="block">Launch Sooner.</span>
           </h1>
         </div>
       </div>
