@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { BarChart, Code, Database, Layers, Link, ShieldCheck, Zap } from "lucide-react";
 
@@ -16,54 +15,51 @@ const Toolsets = () => {
   return (
     <section id="toolsets" className="py-20 bg-[#0F172A]">
       <div className="container px-4 md:px-6">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Comprehensive <span className="text-gradient">Toolsets & Resources</span>
+            Empower Your Team with <span className="text-gradient">Comprehensive Toolsets</span>
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            Everything your development team needs to build, deploy, and scale your products
-            with confidence and speed.
+            SecretStartups.io provides everything your development team needs to build, deploy, and scale products efficiently. From pre-built APIs to advanced analytics, we’ve got you covered.
           </p>
         </div>
 
+        {/* Tool Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <ToolCard 
             icon={Code}
             title="APIs & SDKs"
-            description="Pre-built APIs and SDKs for common services and integrations, saving weeks of development time."
+            description="Accelerate development with pre-built APIs and SDKs for seamless integrations."
           />
-          
           <ToolCard 
             icon={Layers}
             title="UI Components"
-            description="Extensive library of responsive UI components that can be customized to match your brand."
+            description="Access a library of responsive, customizable UI components to match your brand."
           />
-          
           <ToolCard 
             icon={Database}
             title="Data Layer"
-            description="Simplified data access patterns with built-in caching, filtering, and real-time capabilities."
+            description="Simplify data access with built-in caching, filtering, and real-time capabilities."
           />
-          
           <ToolCard 
             icon={Zap}
             title="DevOps Automation"
-            description="Fully automated CI/CD pipelines, infrastructure as code, and deployment strategies."
+            description="Streamline your workflows with automated CI/CD pipelines and infrastructure as code."
           />
-          
           <ToolCard 
             icon={ShieldCheck}
             title="Security Framework"
-            description="Enterprise-grade security with authentication, authorization, and data protection built-in."
+            description="Ensure enterprise-grade security with built-in authentication and data protection."
           />
-          
           <ToolCard 
             icon={BarChart}
             title="Analytics Suite"
-            description="Comprehensive analytics tools to track usage, performance, and user behavior from day one."
+            description="Gain insights with tools to track usage, performance, and user behavior."
           />
         </div>
 
+        {/* Exclusive Engineering Support */}
         <div className="glass-card p-8 border border-white/10 rounded-xl mb-16">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
@@ -71,9 +67,7 @@ const Toolsets = () => {
                 Exclusive Engineering Support
               </h3>
               <p className="text-gray-300 mb-6">
-                Get direct access to our team of experienced engineers who understand
-                both our platform and your specific business challenges. We're here to
-                help you succeed, from initial architecture to scaling challenges.
+                Partner with our experienced engineers to overcome challenges, from initial architecture to scaling. Our team is here to ensure your success.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center">
@@ -104,9 +98,10 @@ const Toolsets = () => {
           </div>
         </div>
 
+        {/* Call-to-Action */}
         <div className="text-center">
-          <Button variant="outline" className="border-white/10 hover:bg-white/5">
-            View All Resources
+          <Button className="btn-gradient">
+            Explore All Resources
           </Button>
         </div>
       </div>
