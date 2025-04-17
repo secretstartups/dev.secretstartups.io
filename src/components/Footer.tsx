@@ -132,13 +132,18 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
                   Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="/faq" className="text-gray-300 hover:text-white transition-colors">
+                  FAQ
                 </a>
               </li>
               <li>
@@ -165,10 +170,10 @@ const Footer = () => {
             © {new Date().getFullYear()} SecretStartups.io. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <a href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
               Privacy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <a href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors">
               Terms
             </a>
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">

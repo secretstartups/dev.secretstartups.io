@@ -32,12 +32,6 @@ const HeroSection = () => {
 
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center">
-          <p className="text-xl text-gray-300 max-w-3xl mb-10">
-            SecretStartups.io empowers companies to accelerate product development
-            by leveraging pre-built components, powerful toolsets, and expert
-            engineering support.
-          </p>
-
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="btn-gradient">
               Get Started <ArrowRight className="ml-2 h-4 w-4" />
