@@ -1,3 +1,4 @@
+import Layout from "@/components/Layout";
 import { ChevronDown, Shield, Lock, FileText } from "lucide-react";
 import { useState } from "react";
 
@@ -174,6 +175,7 @@ const PrivacyPolicyPage = () => {
   ];
 
   return (
+    <Layout>
     <section className="pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container">
         <div className="max-w-4xl mx-auto">
@@ -210,6 +212,7 @@ const PrivacyPolicyPage = () => {
         </div>
       </div>
     </section>
+    </Layout>
   );
 };
 
