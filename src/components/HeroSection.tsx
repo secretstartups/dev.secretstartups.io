@@ -25,19 +25,13 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block">Build Faster.</span>
             <span className="block">Scale Smarter.</span>
-            <span className="block text-gradient">Launch Sooner.</span>
+            <span className="block">Launch Sooner.</span>
           </h1>
         </div>
       </div>
 
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center">
-          <p className="text-xl text-gray-300 max-w-3xl mb-10">
-            SecretStartups.io empowers companies to accelerate product development
-            by leveraging pre-built components, powerful toolsets, and expert
-            engineering support.
-          </p>
-
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="btn-gradient">
               Get Started <ArrowRight className="ml-2 h-4 w-4" />
