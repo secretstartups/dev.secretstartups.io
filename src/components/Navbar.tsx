@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Solutions", href: "/solutions" },
   { label: "Products", href: "/products" },
-  { label: "Toolsets", href: "#toolsets" },
+  { label: "Toolsets", href: "/tool-sets" },
   { label: "Pricing", href: "/pricing" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Contact Us", href: "/contact" },

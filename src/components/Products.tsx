@@ -15,15 +15,20 @@ const Products = () => {
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       </div>
-      <div className="flex justify-center">
-        <p className="w-1/2 text-xl text-gray-300 mb-10 text-center">
-          SecretStartups.io empowers companies to accelerate product development
-          by leveraging pre-built components, powerful toolsets, and expert
-          engineering support.
-        </p>
-      </div>
-
+      
       <div className="container relative z-10 px-4 md:px-6">
+        {/* Updated header and paragraph to match Pricing.tsx style */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Our <span className="text-gradient">Products</span>
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto">
+            SecretStartups.io empowers companies to accelerate product development
+            by leveraging pre-built components, powerful toolsets, and expert
+            engineering support.
+          </p>
+        </div>
+
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:w-1/2">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm mb-6">
