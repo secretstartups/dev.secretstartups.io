@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="container relative z-10">
+      {/* <div className="container relative z-10">
         <div className="flex flex-col items-center text-center">
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="btn-gradient">
@@ -79,7 +79,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

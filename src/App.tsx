@@ -12,6 +12,10 @@ import TermsOfServicePage from "./pages/TermsOfServicePage";
 import Solutions from "./components/Solutions";
 import Products from "./components/Products";
 import Pricing from "./components/Pricing";
+import CaseStudies from "./components/CaseStudies";
+import { Contact } from "lucide-react";
+import ContactForm from "./components/ContactForm";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +23,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <HashRouter>
+        <ScrollToTop />
         <Toaster />
         <Sonner />
         <Routes>
@@ -51,6 +56,22 @@ const App = () => (
         element={
           <Layout>
             <Pricing />
+          </Layout>
+        }
+          />
+          <Route
+        path="/case-studies"
+        element={
+          <Layout>
+            <CaseStudies />
+          </Layout>
+        }
+          />
+          <Route
+        path="/contact"
+        element={
+          <Layout>
+            <ContactForm />
           </Layout>
         }
           />

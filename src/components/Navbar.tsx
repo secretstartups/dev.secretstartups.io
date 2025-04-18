@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
@@ -9,8 +10,8 @@ const NAV_ITEMS = [
   { label: "Products", href: "/products" },
   { label: "Toolsets", href: "#toolsets" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Case Studies", href: "#casestudies" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -43,13 +44,13 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-sm text-gray-300 hover:text-white transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button className="btn-gradient">Get Started</Button>
           </div>
@@ -69,14 +70,14 @@ const Navbar = () => {
         <div className="md:hidden bg-startup-dark/95 backdrop-blur-lg">
           <div className="px-4 py-4 space-y-3">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="block text-gray-300 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button className="w-full btn-gradient mt-4">Get Started</Button>
           </div>
