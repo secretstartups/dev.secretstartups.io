@@ -16,6 +16,7 @@ import CaseStudies from "./components/CaseStudies";
 import { Contact } from "lucide-react";
 import ContactForm from "./components/ContactForm";
 import ScrollToTop from "./components/ScrollToTop";
+import Toolsets from "./components/Toolsets";
 
 const queryClient = new QueryClient();
 
@@ -28,83 +29,86 @@ const App = () => (
         <Sonner />
         <Routes>
           <Route
-        path="/"
-        element={
-          <Layout>
-            <Index />
-          </Layout>
-        }
+            path="/"
+            element={
+              <Layout>
+                <Index />
+              </Layout>
+            }
           />
           <Route
-        path="/solutions"
-        element={
-          <Layout>
-            <Solutions />
-          </Layout>
-        }
+            path="/solutions"
+            element={
+              <Layout>
+                <Solutions />
+              </Layout>
+            }
           />
           <Route
-        path="/products"
-        element={
-          <Layout>
-            <Products />
-          </Layout>
-        }
+            path="/products"
+            element={
+              <Layout>
+                <Products />
+              </Layout>
+            }
           />
           <Route
-        path="/pricing"
-        element={
-          <Layout>
-            <Pricing />
-          </Layout>
-        }
+            path="/tool-sets"
+            element={
+              <Layout>
+                <Toolsets />
+              </Layout>
+            }
           />
           <Route
-        path="/case-studies"
-        element={
-          <Layout>
-            <CaseStudies />
-          </Layout>
-        }
+            path="/pricing"
+            element={
+              <Layout>
+                <Pricing />
+              </Layout>
+            }
           />
           <Route
-        path="/contact"
-        element={
-          <Layout>
-            <ContactForm />
-          </Layout>
-        }
+            path="/case-studies"
+            element={
+              <Layout>
+                <CaseStudies />
+              </Layout>
+            }
           />
           <Route
-        path="/faq"
-        element={
-          <Layout>
-            <FAQPage />
-          </Layout>
-        }
+            path="/contact"
+            element={
+              <Layout>
+                <ContactForm />
+              </Layout>
+            }
           />
           <Route
-        path="/privacy-policy"
-        element={
-            <PrivacyPolicyPage />
-        }
+            path="/faq"
+            element={
+              <Layout>
+                <FAQPage />
+              </Layout>
+            }
           />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route
-        path="/terms-of-service"
-        element={
-          <Layout>
-            <TermsOfServicePage />
-          </Layout>
-        }
+            path="/terms-of-service"
+            element={
+              <Layout>
+                <TermsOfServicePage />
+              </Layout>
+            }
           />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route
-        path="*"
-        element={
-          <Layout>
-            <NotFound />
-          </Layout>
-        }
+            path="*"
+            element={
+              <Layout>
+                <NotFound />
+              </Layout>
+            }
           />
         </Routes>
       </HashRouter>

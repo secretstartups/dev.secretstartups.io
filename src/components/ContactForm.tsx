@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -43,6 +42,17 @@ const ContactForm = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-[#0F172A] to-[#0F1629]">
       <div className="container px-4 md:px-6">
+        {/* Updated header and paragraph to match Pricing.tsx style */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Contact <span className="text-gradient">Us</span>
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto">
+            Ready to accelerate your product development? Contact us to learn how SecretStartups.io 
+            can help your company build and launch products faster than ever before.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm mb-6">
@@ -50,13 +60,13 @@ const ContactForm = () => {
               <span>Get in Touch</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to <span className="text-gradient">Accelerate</span> Your Product Development?
-            </h2>
+            <h3 className="text-2xl font-bold mb-6">
+              We're Here to <span className="text-gradient">Help</span>
+            </h3>
             
-            <p className="text-xl text-gray-300 mb-8">
-              Contact us to learn how SecretStartups.io can help your company build and 
-              launch products faster than ever before.
+            <p className="text-lg text-gray-300 mb-8">
+              Have questions about our services? Need a custom solution? 
+              Our team is ready to provide the support you need.
             </p>
             
             <div className="space-y-6 mb-8">
